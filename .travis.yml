@@ -9,4 +9,4 @@ script:
   - dotnet build -c Release
   - dotnet pack -c Release --output nupkgs -p:PackageVersion="0.0.0"
   - dotnet test -c Release
-  - dotnet nuget push ./ArchUnitNET/nupkgs/Georg.TestPackage.*.nupkg -k %NUGET_API_KEY% -s https://api.nuget.org/v3/index.json
+  - dotnet nuget push ./ArchUnitNET/nupkgs/Georg.TestPackage.*.nupkg -k oy2kr7otfmjr7w43negqthvh3bsun4befiqovhmsmcmaru -s https://api.nuget.org/v3/index.json
