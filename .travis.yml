@@ -5,7 +5,6 @@ solution: ArchUnit.sln
 before_install: 
   - choco install dotnetfx --version=4.8.0.20190930
   - choco install dotnetcore-sdk --version=2.2.402
-  - choco install dotnetcore-sdk --version=3.1.402
 script:
   - dotnet build -c Release
   - dotnet pack -c Release --output nupkgs -p:PackageVersion="1.0.2"
