@@ -3,10 +3,11 @@ mono: none
 os: windows
 solution: ArchUnit.sln
 before_install: 
-  - choco install dotnetfx
+  - choco install dotnetfx --version=4.8
   - choco install dotnetcore-sdk --version=2.2.402
+  - choco install dotnetcore-sdk --version=3.1.8
 script:
   - dotnet build -c Release
-  - dotnet pack -c Release --output nupkgs -p:PackageVersion="0.0.0"
+  - dotnet pack -c Release --output nupkgs -p:PackageVersion="1.0.2"
   - dotnet test -c Release
   - dotnet nuget push ./ArchUnitNET/nupkgs/Georg.TestPackage.*.nupkg -k oy2kr7otfmjr7w43negqthvh3bsun4befiqovhmsmcmaru -s https://api.nuget.org/v3/index.json
