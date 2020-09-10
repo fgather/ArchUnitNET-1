@@ -2,7 +2,7 @@ language: csharp
 mono: none
 dotnet: 2.2.402
 solution: ArchUnit.sln
-script: chmod +x ./Travis/build.sh && ./Travis/build.sh $NUGET_API_KEY
+script: chmod +x ./Travis/build.sh && ./Travis/build.sh $NUGET_API_KEY https://api.nuget.org/v3/index.json
 deploy:
   skip_cleanup: true
   provider: script

@@ -4,7 +4,7 @@
         <TargetFramework>netstandard2.0</TargetFramework>
         <IsPackable>true</IsPackable>
         <RootNamespace>ArchUnitNET</RootNamespace>
-        <PackageId>TngTech.ArchUnitNET</PackageId>
+        <PackageId>Georg.TestPackage</PackageId>
         <Title>ArchUnit C#</Title>
         <Authors>Florian Gather, Paula Ruiz, Fritz Brandhuber, Pavel Fischer</Authors>
         <Company>TNG Technology Consulting GmbH</Company>
